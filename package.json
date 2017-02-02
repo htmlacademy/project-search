@@ -2,7 +2,7 @@
   "name": "@htmlacademy/project-search",
   "version": "0.1.0",
   "description": "Project structure searcher",
-  "main": "lib/check.js",
+  "main": "lib/search.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/htmlacademy/project-search.git"
