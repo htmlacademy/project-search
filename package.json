@@ -7,10 +7,21 @@
     "type": "git",
     "url": "https://github.com/htmlacademy/project-search.git"
   },
+  "bugs": {
+    "url": "https://github.com/htmlacademy/project-search/issues"
+  },
+  "homepage": "https://github.com/htmlacademy/project-search#readme",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha"
   },
+  "keywords": [
+    "HTMLAcademy",
+    "HTML Academy",
+    "project",
+    "structure",
+    "search"
+  ],
   "author": "Nakleikoff <a@htmlacademy.ru>",
   "license": "MIT",
   "dependencies": {
