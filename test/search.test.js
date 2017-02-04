@@ -41,7 +41,9 @@ describe(`Search for files and types`, () => {
       return search.file(testDir, `.hidden`).should.be.fulfilledWith(`.hidden`);
     });
 
-    search.dir(testDir).then((dirs) => console.log(dirs));
+    it(`All dirs`, () => {
+      return search.dir(testDir).should.be.fulfilledWith([`css`, `img`, `js`, `js/module`]);
+    });
   });
 
   describe(`Find not existenting files`, () => {
@@ -51,6 +53,10 @@ describe(`Search for files and types`, () => {
 
     it(`Doc file`, () => {
       return search.file(testDir, `doc`).should.be.fulfilledWith(null);
+    });
+
+    it(`Less dir`, () => {
+      return search.dir(testDir, `less`).should.be.fulfilledWith([]);
     });
   });
 
