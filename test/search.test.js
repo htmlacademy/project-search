@@ -40,6 +40,8 @@ describe(`Search for files and types`, () => {
     it(`.hidden file`, () => {
       return search.file(testDir, `.hidden`).should.be.fulfilledWith(`.hidden`);
     });
+
+    search.dir(testDir).then((dirs) => console.log(dirs));
   });
 
   describe(`Find not existenting files`, () => {
