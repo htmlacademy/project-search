@@ -33,7 +33,7 @@ All methods return a Promise. If the Promise resolves it returns results of sear
 - **styles**(projectPath) — returns an Array with all files with styles definition. Include `css`, `less`, `sass`, `scss`, `pcss`, `postcss` files;
 - **type**(projectPath, type) — returns an Array of all files with `type` extension in project path
 - **file**(projectPath, file) — returns one file with name `file` in project path
-- **file**(projectPath, dir) — returns an Array of all directories with name `dir`. If `dir` isn't set, returns all directories in project path
+- **dir**(projectPath, dir) — returns an Array of all directories with name `dir`. If `dir` isn't set, returns all directories in project path
 
 [npm-image]: https://img.shields.io/npm/v/@htmlacademy/project-search.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/@htmlacademy/project-search
